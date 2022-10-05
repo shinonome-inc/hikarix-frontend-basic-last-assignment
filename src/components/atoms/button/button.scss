@@ -9,7 +9,7 @@
   &:hover{
     background-color: $orange_bistre;
     color: $white;
-    animation: ease;
+    animation: .2s ease;
   }
   @media screen and (max-width: $breakpoint-sm) {
     background-color: $black;
