@@ -1,33 +1,26 @@
 @use "../../variables" as *;
 
-.btn{
-  align-items: center;
-  border: none;
+.button{
   text-align: center;
+  background-color: $black;
+  color: $white;
+  font-family: $fontfamily-gothic;
+  padding: 17.5px 74px;
   &:hover{
     background-color: $orange_bistre;
     color: $white;
     animation: ease;
   }
-  @media screen and (min-width:480px) {
+  @media screen and (max-width: $breakpoint-sm) {
     background-color: $black;
     color: $white;
-    font-family: Noto Sans JP;
-    border-radius: 0;
+    font-family: $fontfamily-gothic;
     padding: 12.5px 64px;
   }
-  @media screen and (min-width:768px) and (max-width:1024px) {
+  @media screen and (max-width: $breakpoint-lg){
     background-color: $black;
     color: $white;
-    font-family: Noto Sans JP;
-    border-radius: 0;
+    font-family: $fontfamily-gothic;
     padding: 17.5px 49px;
-  }
-  @media screen and (min-width:1024px) {
-    background-color: $black;
-    color: $white;
-    font-family: Noto Sans JP;
-    border-radius: 0;
-    padding: 17.5px 74px;
   }
 }
