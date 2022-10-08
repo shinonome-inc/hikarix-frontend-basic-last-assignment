@@ -5,22 +5,19 @@
   background-color: $black;
   color: $white;
   font-family: $fontfamily-gothic;
-  padding: 17.5px 74px;
+  width: 200px;
+  line-height: 55px;
+  display:inline-block;
   &:hover{
-    background-color: $orange_bistre;
     color: $white;
-    animation: .2s ease;
+    text-decoration: none;
+    background-color: $orange_bistre;
+    animation: 0.2s ease;
   }
   @media screen and (max-width: $breakpoint-sm) {
-    background-color: $black;
-    color: $white;
-    font-family: $fontfamily-gothic;
-    padding: 12.5px 64px;
+    width: 150px;
   }
   @media screen and (max-width: $breakpoint-lg){
-    background-color: $black;
-    color: $white;
-    font-family: $fontfamily-gothic;
-    padding: 17.5px 49px;
+    width: 150px;
   }
 }
