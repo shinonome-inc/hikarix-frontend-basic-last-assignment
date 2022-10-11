@@ -5,13 +5,15 @@
   background-color: $black;
   color: $white;
   font-family: $fontfamily-gothic;
-  line-height: 55px;
+  font-size: 14px;
+  height: 55px;
   display:inline-block;
+  transition: 0.2s ease;
+  padding: 17.5px;
   &:hover{
     color: $white;
     text-decoration: none;
     background-color: $orange_bistre;
-    animation: 0.2s ease;
   }
   @media screen and (min-width: $breakpoint-lg){
     width: 200px;
@@ -20,7 +22,8 @@
     width: 150px;
   }
   @media screen and (max-width: $breakpoint-md){
-    line-height: 45px;
+    height: 45px;
+    padding: 12.5px 0 12.5px 0;
     width: 180px;
   }
 }
