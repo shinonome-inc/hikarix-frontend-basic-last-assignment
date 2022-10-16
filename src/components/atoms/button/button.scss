@@ -3,22 +3,20 @@
 .button{
   text-align: center;
   background-color: $black;
-  color: $white;
-  font-family: $fontfamily-gothic;
-  font-size: 14px;
-  height: 55px;
   display:inline-block;
-  transition: 0.2s ease;
+  font-size: 14px;
+  font-family: $fontfamily-gothic;
+  color: $white;
+  width: 200px;
+  height: 55px;
   padding: 17.5px;
+  transition: 0.2s ease;
   &:hover{
     color: $white;
     text-decoration: none;
     background-color: $orange_bistre;
   }
-  @media screen and (min-width: $breakpoint-lg){
-    width: 200px;
-  }
-  @media screen and (min-width: $breakpoint-sm) and (max-width: $breakpoint-lg){
+  @media screen and (max-width: $breakpoint-lg){
     width: 150px;
   }
   @media screen and (max-width: $breakpoint-md){
