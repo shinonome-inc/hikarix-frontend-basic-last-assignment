@@ -1,0 +1,48 @@
+@use "../../variables" as *;
+
+body{
+  padding: 0;
+}
+
+.message_wrapper{
+  background-color: $black;
+  padding: 52px 0 ;
+}
+
+.main-heading{
+  text-align: center;
+  font-family: 'Noto Serif JP';
+  font-size: 36px;
+  line-height: 54px;
+  color: $white;
+  background-color: $black;
+  margin-bottom: 10px;
+  @media screen and (max-width:$breakpoint-lg) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+.main-caption{
+  text-align: center;
+  font-family: 'Noto Serif JP';
+  font-size: 14px;
+  line-height: 36px;
+  color: $white;
+  .md{
+    display: none;
+  }
+  .sm{
+    display: none;
+  }
+  @media screen and (max-width:$breakpoint-lg) {
+    line-height: 28px;
+    .md{
+      display: block;
+    }
+  }
+  @media screen and (max-width:$breakpoint-md) {
+    .sm{
+      display: block;
+    }
+  }
+}
