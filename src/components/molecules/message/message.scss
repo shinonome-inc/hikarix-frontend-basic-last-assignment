@@ -1,12 +1,13 @@
 @use "../../variables" as *;
 
-body{
-  padding: 0;
-}
-
 .message_wrapper{
-  background-color: $black;
+  background-color: $white;
   padding: 52px 0 ;
+  @media screen and (max-width:$breakpoint-lg) {
+    padding: 32px 0;
+  }
+  @media screen and (max-width:$breakpoint-md) {
+  }
 }
 
 .main-heading{
@@ -14,20 +15,22 @@ body{
   font-family: 'Noto Serif JP';
   font-size: 36px;
   line-height: 54px;
-  color: $white;
-  background-color: $black;
+  color: $black;
+  background-color: $white;
   margin-bottom: 10px;
   @media screen and (max-width:$breakpoint-lg) {
     font-size: 20px;
     line-height: 30px;
+    margin-bottom: 6px;
   }
 }
 .main-caption{
   text-align: center;
-  font-family: 'Noto Serif JP';
+  font-family: $fontfamily-gothic;
   font-size: 14px;
   line-height: 36px;
-  color: $white;
+  color: $black;
+  margin-bottom: 0;
   .md{
     display: none;
   }
@@ -36,11 +39,13 @@ body{
   }
   @media screen and (max-width:$breakpoint-lg) {
     line-height: 28px;
+    padding: 0 154px;
     .md{
       display: block;
     }
   }
   @media screen and (max-width:$breakpoint-md) {
+    padding: 0 54px;
     .sm{
       display: block;
     }
