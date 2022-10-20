@@ -1,0 +1,51 @@
+@use "../../atoms/button/button.scss";
+@use "../../variables" as *;
+@use "../../reset" as *;
+.card{
+  border: none;
+  position: relative;
+  overflow: hidden;
+  figure{
+    img{
+      transition: 0.2s ease;
+      overflow: hidden;
+    }
+    &:hover{
+      img{
+        transform: scale(1.2);
+      }
+    }
+  }
+  .cardTitle{
+    z-index: 2;
+    position: absolute;
+    font-family: 'Noto Sans JP';
+    font-weight: 700;
+    left: 6px;
+    font-size: 20px;
+    line-height: 29px;
+    color: $orange_bistre;
+  }
+  .triangle{
+    z-index: 1;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 150px 150px 0 0;
+    border-color: $white transparent transparent transparent;
+  }
+  .card-body{
+    background: $white_smoke;
+    padding: 32px;
+    overflow: hidden;
+    .card-text{
+      margin-bottom: 30px;
+      font-size: 14px;
+      line-height: 33px;
+    }
+    .center{
+      text-align: center;
+    }
+  }
+}
