@@ -7,6 +7,7 @@
   overflow: hidden;
   figure{
     img{
+      z-index: 1;
       transition: 0.2s ease;
       overflow: hidden;
     }
@@ -19,10 +20,9 @@
   .cardTitle{
     z-index: 2;
     position: absolute;
-    font-family: 'Noto Sans JP';
     font-weight: 700;
     left: 6px;
-    font-size: 20px;
+    font-size: $fontsize-l;
     line-height: 29px;
     color: $orange_bistre;
   }
@@ -36,12 +36,13 @@
     border-color: $white transparent transparent transparent;
   }
   .card-body{
+    z-index: 2;
     background: $white_smoke;
     padding: 32px;
     overflow: hidden;
     .card-text{
       margin-bottom: 30px;
-      font-size: 14px;
+      font-size: $fontsize-s;
       line-height: 33px;
     }
     .center{
