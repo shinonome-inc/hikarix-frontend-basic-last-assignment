@@ -1,0 +1,67 @@
+@use "../../variables" as *;
+
+.plan{
+  &:nth-of-type(2n){
+    outline: 8px solid $orange_bistre;
+    outline-offset: -8px;
+    margin: 0 30px;
+    .plan-text-wrapper{
+      background-color: $orange_bistre;
+    }
+  }
+  .plan-text-wrapper{
+    height: 69px;
+    background-color: $orange_zorba;
+    .plan-text{
+      text-align: center;
+      padding: 20px 0;
+      font-family: $fontfamily-gothic;
+      font-weight: 700;
+      font-size:$fontsize-l;
+      line-height: 29px;
+      color: $white;
+    }
+  }
+  .plan-amount-wrapper{
+    height: 142px;
+    background-color: $gray_desertStorm;
+    text-align: center;
+    padding: 24px 0;
+    border: 1px solid $gray_gainsboro;
+    .plan-amount{
+      font-family: $fontfamily-gothic;
+      font-weight: 700;
+      font-size: $fontsize-xxl;
+      line-height: 58px;
+      span{
+        font-family: $fontfamily-gothic;
+        font-weight: 700;
+        font-size: $fontsize-l;
+        line-height: 29px;
+        margin-right: 4px;
+      }
+    }
+  }
+  .plan-contents{
+    border: 1px solid $gray_gainsboro;
+    border-top: none;
+    .plan-content{
+      text-align: center;
+      background: #FFFFFF;
+      border-bottom: 1px solid $gray_gainsboro;
+      &:nth-of-type(4){
+        border-bottom: none;
+      }
+      .plan-content-text{
+        margin-bottom: 0;
+        padding: 20px;
+      }
+    }
+  }
+  @media screen and (max-width:$breakpoint-md){
+    &:nth-of-type(2n){
+      margin: 0;
+    }
+    margin-bottom: 24px;
+  }
+}
