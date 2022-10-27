@@ -8,7 +8,7 @@
   figure{
     img{
       z-index: 1;
-      transition: 0.2s ease;
+      transition: 0.5s ease;
       overflow: hidden;
     }
     &:hover{
@@ -44,6 +44,7 @@
       margin-bottom: 30px;
       font-size: $fontsize-s;
       line-height: 33px;
+      color: $black;
     }
     .center{
       text-align: center;
