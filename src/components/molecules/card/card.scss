@@ -10,10 +10,16 @@
       z-index: 1;
       transition: 0.5s ease;
       overflow: hidden;
+      @media screen and (max-width: $breakpoint-md){
+        transition: none;
+      }
     }
     &:hover{
       img{
         transform: scale(1.2);
+        @media screen and (max-width: $breakpoint-md){
+          transform: none;
+        }
       }
     }
   }
