@@ -1,0 +1,19 @@
+@use "../../variables" as *;
+
+.link{
+  display: inline-block;
+  list-style: none;
+  padding: 39px 65px;
+  transition: 0.2s ease;
+  color: $white;
+  &:hover{
+    color: $gray_nobel;
+  }
+  @media (max-width: $breakpoint-xl) {
+    transition: none;
+    padding: 39px 24px;
+    &:hover{
+      color: $white;
+    }
+  }
+}

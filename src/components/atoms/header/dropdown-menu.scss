@@ -1,0 +1,14 @@
+@use "../../variables" as *;
+
+.menu{
+  color: $white;
+  background-color: $black;
+  list-style: none;
+  transition: 0.2s ease;
+  &:hover{
+    background-color: $orange_bistre;
+  }
+  p{
+    padding: 18px 105px 18px 18px;
+  }
+}
