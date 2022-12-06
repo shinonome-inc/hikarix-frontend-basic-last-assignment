@@ -24,6 +24,9 @@
       font-size: 16px;
       line-height: 23px;
       color: $black;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
       &:hover{
         color: $orange_bistre;
       }
