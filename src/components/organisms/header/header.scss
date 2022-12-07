@@ -1,0 +1,16 @@
+@use '../../variables' as *;
+@use '../../atoms/header/nav-link.scss' as *;
+
+.container{
+  width: 100%;
+  background-color: $black;
+  opacity: 50%;
+  margin-right: 0;
+
+  .main-logo{
+    line-height: 84px;
+    width: 140px;
+    height: 23px;
+    margin: auto 30px;
+  }
+}

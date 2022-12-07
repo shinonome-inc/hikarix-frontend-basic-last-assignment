@@ -1,9 +1,11 @@
 @use "../../variables" as *;
 
 .link{
+  font-size: $fontsize-s;
   display: inline-block;
   list-style: none;
-  padding: 39px 65px;
+  padding: 35px 0;
+  padding-left: 40px;
   transition: 0.2s ease;
   color: $white;
   &:hover{
