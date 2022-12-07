@@ -16,7 +16,7 @@
       padding: 20px 0;
       font-family: $fontfamily-gothic;
       font-weight: 700;
-      font-size:$fontsize-l;
+      font-size:$fontsize-s;
       line-height: 29px;
       color: $white;
     }
@@ -54,8 +54,10 @@
         border-bottom: none;
       }
       .plan-content-text{
+        font-size:$fontsize-s;
         margin-bottom: 0;
         padding: 20px;
+        line-height: 20px;
       }
     }
   }
