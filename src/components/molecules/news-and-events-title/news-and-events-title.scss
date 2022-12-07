@@ -18,5 +18,7 @@
       font-weight: 400;
       margin-left: 16px;
     }
+    @media (min-width: $breakpoint-md) {
+      font-size: $fontsize-l;
   }
 }
