@@ -15,20 +15,57 @@
     .link{
       &:nth-of-type(2){
         position: relative;
-        &:hover .dropdown {
+        &:hover .dropdown-menu-a{
           display: block;
         }
-        .dropdown{
+        .dropdown-menu-a{
+          display: none;
           position: absolute;
           top: 90px;
-          padding-right: 0px;
-          background-color: $black;
-          display: none;
+          left: 20px;
         }
       }
-      &:last-of-type{
-        padding-right: 50px;
+    &:last-of-type{
+      padding-right: 50px;
       }
     }
+  }
+  .humberger-toggler{
+    background-color: transparent;
+    border: 1px solid transparent;
+  }
+  .humberger{
+    display: none;
+  }
+  @media (max-width: $breakpoint-xl) {
+    height: 60px;
+    background-color: $black;
+    .link{
+      display: none;
+    }
+    .humberger{
+      display: block;
+      width: 15px;
+      height: 19px;
+      margin: 20px 0;
+      margin-right: 16px;
+    }
+  }
+}
+.relative{
+  position: relative;
+  .link{
+    &:nth-of-type(2){
+      .plus{
+        vertical-align: middle;
+        background-color: black;
+      }
+    }
+  }
+  #navbarNav{
+    position: absolute;
+  }
+  .dropdown-menu{
+    width: 100%;
   }
 }

@@ -9,12 +9,14 @@
   transition: 0.2s ease;
   color: $white;
   line-height: 20px;
+  cursor: pointer;
   &:hover{
     color: $gray_nobel;
   }
   @media (max-width: $breakpoint-xl) {
+    width: 100%;
     transition: none;
-    padding: 39px 24px;
+    padding: 15px 24px;
     &:hover{
       color: $white;
     }

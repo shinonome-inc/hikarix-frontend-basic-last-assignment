@@ -5,13 +5,14 @@
   background-color: $black;
   list-style: none;
   transition: 0.2s ease;
+  width: 220px;
   &:hover{
     background-color: $orange_bistre;
   }
   p{
-    padding: 18px 105px 18px 18px;
+    padding: 18px;
   }
-  @media(max-width: $breakpoint-xl){
-    opacity: 0;
+  @media (max-width:breakpoint-xl) {
+    width: 100%;
   }
 }
