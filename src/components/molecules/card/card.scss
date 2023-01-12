@@ -1,0 +1,59 @@
+@use "../../atoms/button/button.scss";
+@use "../../variables" as *;
+@use "../../reset" as *;
+.card{
+  border: none;
+  position: relative;
+  overflow: hidden;
+  figure{
+    img{
+      z-index: 1;
+      transition: 0.5s ease;
+      overflow: hidden;
+      @media screen and (max-width: $breakpoint-md){
+        transition: none;
+      }
+    }
+    &:hover{
+      img{
+        transform: scale(1.2);
+        @media screen and (max-width: $breakpoint-md){
+          transform: none;
+        }
+      }
+    }
+  }
+  .cardTitle{
+    z-index: 2;
+    position: absolute;
+    font-weight: 700;
+    left: 6px;
+    font-size: $fontsize-l;
+    line-height: 29px;
+    color: $orange_bistre;
+  }
+  .triangle{
+    z-index: 1;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 150px 150px 0 0;
+    border-color: $white transparent transparent transparent;
+  }
+  .card-body{
+    z-index: 2;
+    background: $white_smoke;
+    padding: 32px;
+    overflow: hidden;
+    .card-text{
+      margin-bottom: 30px;
+      font-size: $fontsize-s;
+      line-height: 33px;
+      color: $black;
+    }
+    .center{
+      text-align: center;
+    }
+  }
+}
