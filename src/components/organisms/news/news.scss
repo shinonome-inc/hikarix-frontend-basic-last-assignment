@@ -5,8 +5,6 @@
 
 .news-list{
   border: 1px solid $gray_gainsboro;
-  margin-bottom: 14px;
-
   .news-card{
     background-color: $white;
     padding: 20px;
@@ -30,6 +28,7 @@
       overflow: hidden;
       text-overflow: ellipsis;
       white-space: nowrap;
+      transition: 0.2s ease;
       &:hover{
         color: $orange_bistre;
       }
