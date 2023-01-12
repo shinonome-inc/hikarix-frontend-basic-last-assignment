@@ -6,13 +6,12 @@
   list-style: none;
   transition: 0.2s ease;
   width: 220px;
+  display: block;
+  padding: 18px;
   &:hover{
     background-color: $orange_bistre;
   }
-  p{
-    padding: 18px;
-  }
-  @media (max-width:breakpoint-xl) {
+  @media (max-width:$breakpoint-xl) {
     width: 100%;
   }
 }

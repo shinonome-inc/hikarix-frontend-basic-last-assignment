@@ -62,10 +62,10 @@
       }
     }
   }
-  #navbarNav{
-    position: absolute;
-  }
-  .dropdown-menu{
+  .dropdown{
     width: 100%;
+    @media(max-width: $breakpoint-xl)  {
+      position: static;
+    }
   }
 }
