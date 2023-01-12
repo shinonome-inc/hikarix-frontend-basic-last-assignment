@@ -5,7 +5,6 @@
 
 .news-list{
   border: 1px solid $gray_gainsboro;
-
   .news-card{
     background-color: $white;
     padding: 20px;
@@ -19,18 +18,23 @@
       font-size: 12px;
       color: $gray_nobel;
       margin-bottom: 10px;
+      font-family: $fontfamily-gothic;
     }
     .news-caption{
+      font-family:$fontfamily-gothic;
       font-size: 16px;
       line-height: 23px;
       color: $black;
-      font-family:$fontfamily-gothic;
       overflow: hidden;
       text-overflow: ellipsis;
       white-space: nowrap;
+      transition: 0.2s ease;
       &:hover{
         color: $orange_bistre;
       }
     }
   }
+}
+.font{
+  font-family: $fontfamily-gothic;
 }
