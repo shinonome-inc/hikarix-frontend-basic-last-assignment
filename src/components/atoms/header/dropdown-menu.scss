@@ -3,6 +3,7 @@
 .menu{
   color: $white;
   background-color: $black;
+  font-family: $fontfamily-gothic;
   list-style: none;
   transition: 0.2s ease;
   width: 220px;
@@ -10,8 +11,13 @@
   padding: 18px;
   &:hover{
     background-color: $orange_bistre;
+    text-decoration: none;
+    color: $white;
   }
   @media (max-width:$breakpoint-xl) {
     width: 100%;
+    &:hover{
+      background-color: $black;
+    }
   }
 }
