@@ -12,21 +12,24 @@
     height: 69px;
     background-color: $orange_zorba;
     .plan-text{
+      margin-top: 16px;
       text-align: center;
       padding: 20px 0;
       font-family: $fontfamily-gothic;
       font-weight: 700;
-      font-size:$fontsize-s;
+      font-size:$fontsize-l;
       line-height: 29px;
       color: $white;
     }
   }
   .plan-amount-wrapper{
-    height: 142px;
     background-color: $gray_desertStorm;
     text-align: center;
     padding: 24px 0;
     border: 1px solid $gray_gainsboro;
+    .monthly{
+      font-size: $fontsize-s;
+    }
     .plan-amount{
       font-family: $fontfamily-gothic;
       font-weight: 700;
