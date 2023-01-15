@@ -65,12 +65,7 @@
 }
 .relative{
   position: relative;
-  #navbarNav{
-    display: none;
-      @media(max-width: $breakpoint-xl)  {
-        display: block;
-    }
-  }
+  display: none;
   .link{
     &:nth-of-type(2){
       .plus{
@@ -84,5 +79,8 @@
     @media(max-width: $breakpoint-xl)  {
       position: static;
     }
+  }
+  @media (max-width: $breakpoint-xl) {
+    display: block;
   }
 }
