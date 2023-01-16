@@ -1,14 +1,47 @@
 @use "../../variables" as *;
 
-.top{
+.fv{
   .top-image{
     background-image: url("../../../img/top-image.png");
     height:  100vh;
     background-size: cover;
+    position: relative;
+    .text-block{
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      margin: auto; /*上下左右中央に*/
+      height: 256px;
+      width: 104px;
+      .fv-text{
+        writing-mode: vertical-rl;
+        color: $white;
+        font-family: $fontfamily-mincho;
+        line-height: 52px;
+        @media screen and (max-width:$breakpoint-lg) {
+          font-size: $fontsize-l;
+          line-height: 29px;
+        }
+      }
+      @media screen and (max-width:$breakpoint-lg) {
+        height: 160px;
+      }
+    }
     }
   @media screen and (max-width:$breakpoint-lg) {
     .top-image{
       height: 360px;
     }
+  }
+}
+.message_wrapper{
+  background-color: $black;
+  h2{
+    color: $white;
+  }
+  .main-caption{
+    color: $white;
   }
 }
