@@ -64,9 +64,6 @@
     }
   }
   @media screen and (max-width:$breakpoint-md){
-    &:nth-of-type(2n){
-      margin: 0;
-    }
     margin-bottom: 24px;
   }
 }
