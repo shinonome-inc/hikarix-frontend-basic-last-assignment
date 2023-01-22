@@ -1,0 +1,89 @@
+@use '../../variables' as *;
+@use '../../reset' as *;
+@use '../../atoms/header/nav-link.scss' as *;
+.header-container{
+  display: flex;
+  justify-content: space-between;
+  background-color: $black_50;
+  .logo{
+    margin: auto 0;
+    margin-left: 30px;
+    .main-logo{
+      line-height: 84px;
+      width: 140px;
+      height: 23px;
+    }
+  }
+  .nav-list{
+    .link{
+      &:nth-of-type(2){
+        position: relative;
+        &:hover .dropdown-menu-a{
+          display: block;
+        }
+        .dropdown-menu-a{
+          display: none;
+          position: absolute;
+          top: 90px;
+          left: 20px;
+        }
+      }
+    &:last-of-type{
+      padding-right: 50px;
+      }
+    }
+  }
+  .humberger-toggler{
+    background-color: transparent;
+    border: 1px solid transparent;
+    outline: none;
+    display: none;
+  }
+  .humberger{
+    display: none;
+  }
+  @media (max-width: $breakpoint-xl) {
+    height: 60px;
+    background-color: $black;
+    a{
+      margin: auto 0;
+    }
+    .link{
+      display: none;
+    }
+    .humberger-toggler{
+      display: block;
+      button{
+        padding: 0;
+      }
+    }
+    .humberger{
+      display: block;
+      width: 15px;
+      height: 19px;
+      margin: 20px 0;
+      margin-right: 15px;
+    }
+  }
+}
+.relative{
+  position: relative;
+  display: none;
+  .link{
+    &:nth-of-type(2){
+      .plus{
+        vertical-align: middle;
+        background-color: black;
+      }
+    }
+  }
+  .dropdown{
+    width: 100%;
+    @media(max-width: $breakpoint-xl)  {
+      position: static;
+    }
+  }
+  @media (max-width: $breakpoint-xl) {
+    display: block;
+  }
+}

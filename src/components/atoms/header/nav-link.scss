@@ -1,0 +1,25 @@
+@use "../../variables" as *;
+
+.link{
+  font-size: $fontsize-s;
+  font-family: $fontfamily-gothic;
+  display: inline-block;
+  list-style: none;
+  padding: 35px 0;
+  padding-left: 40px;
+  transition: 0.2s ease;
+  color: $white;
+  line-height: 20px;
+  cursor: pointer;
+  &:hover{
+    color: $gray_nobel;
+  }
+  @media (max-width: $breakpoint-xl) {
+    width: 100%;
+    transition: none;
+    padding: 15px 24px;
+    &:hover{
+      color: $white;
+    }
+  }
+}

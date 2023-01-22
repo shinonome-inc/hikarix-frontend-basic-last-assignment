@@ -1,0 +1,8 @@
+@use '../../variables' as *;
+
+.nav-list{
+  @media(max-width: $breakpoint-xl){
+    background-color: $black;
+    width: 100%;
+  }
+}
