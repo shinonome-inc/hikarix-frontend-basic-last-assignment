@@ -1,0 +1,69 @@
+@use "../../variables" as *;
+
+.plan{
+  &:nth-of-type(2n){
+    outline: 8px solid $orange_bistre;
+    outline-offset: -8px;
+    .plan-text-wrapper{
+      background-color: $orange_bistre;
+    }
+  }
+  .plan-text-wrapper{
+    height: 69px;
+    background-color: $orange_zorba;
+    .plan-text{
+      text-align: center;
+      padding: 20px 0;
+      font-family: $fontfamily-gothic;
+      font-weight: 700;
+      font-size:$fontsize-l;
+      line-height: 29px;
+      color: $white;
+    }
+  }
+  .plan-amount-wrapper{
+    background-color: $gray_desertStorm;
+    text-align: center;
+    padding: 24px 0;
+    border: 1px solid $gray_gainsboro;
+    .monthly{
+      font-size: $fontsize-s;
+    }
+    .plan-amount{
+      font-family: $fontfamily-gothic;
+      font-weight: 700;
+      font-size: $fontsize-xxl;
+      line-height: 58px;
+      color: $orange_bistre;
+      span{
+        font-family: $fontfamily-gothic;
+        font-weight: 700;
+        font-size: $fontsize-l;
+        line-height: 29px;
+        margin-right: 4px;
+        color: $orange_bistre;
+      }
+    }
+  }
+  .plan-contents{
+    border: 1px solid $gray_gainsboro;
+    border-top: none;
+    .plan-content{
+      text-align: center;
+      background: #FFFFFF;
+      border-bottom: 1px solid $gray_gainsboro;
+      &:nth-of-type(4){
+        border-bottom: none;
+      }
+      .plan-content-text{
+        font-size:$fontsize-s;
+        margin-bottom: 0;
+        padding: 20px;
+        line-height: 20px;
+      }
+    }
+  }
+  @media screen and (max-width:$breakpoint-md){
+    margin-bottom: 24px;
+  }
+}
