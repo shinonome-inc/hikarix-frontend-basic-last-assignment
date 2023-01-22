@@ -1,10 +1,6 @@
 @use '../../variables' as *;
+@use '../../reset' as *;
 @use '../../atoms/header/nav-link.scss' as *;
-
-button{
-  padding: 0;
-}
-
 .header-container{
   display: flex;
   justify-content: space-between;
@@ -57,6 +53,9 @@ button{
     }
     .humberger-toggler{
       display: block;
+      button{
+        padding: 0;
+      }
     }
     .humberger{
       display: block;
