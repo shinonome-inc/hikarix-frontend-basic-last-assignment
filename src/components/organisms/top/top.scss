@@ -1,6 +1,6 @@
 @use "../../variables" as *;
 
-.fv{
+.organisms-top{
   .top-image{
     background-image: url("../../../img/top-image.png");
     height:  100vh;
@@ -9,35 +9,30 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    .text-block{
-      .fv-text{
-        writing-mode: vertical-rl;
-        color: $white;
-        font-size: $fontsize-xl;
-        font-family: $fontfamily-mincho;
-        line-height: 52px;
-        @media screen and (max-width:$breakpoint-lg) {
-          font-size: $fontsize-l;
-          line-height: 29px;
-        }
-      }
+    @media screen and (max-width:$breakpoint-lg) {
+      height: 360px;
+    }
+  .text-block{
+    .fv-text{
+      writing-mode: vertical-rl;
+      color: $white;
+      font-size: $fontsize-xl;
+      font-family: $fontfamily-mincho;
+      line-height: 52px;
       @media screen and (max-width:$breakpoint-lg) {
-        height: 160px;
+        font-size: $fontsize-l;
+        line-height: 29px;
       }
     }
-    }
-    .top-image{
-      @media screen and (max-width:$breakpoint-lg) {
-        height: 360px;
-      }
-    }
-}
-.message_wrapper{
-  background-color: $black;
-  h2{
-    color: $white;
   }
-  .main-caption{
-    color: $white;
+  }
+  .message_wrapper{
+    background-color: $black;
+    h2{
+      color: $white;
+    }
+    .main-caption{
+      color: $white;
+    }
   }
 }
