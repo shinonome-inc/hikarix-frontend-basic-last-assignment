@@ -6,18 +6,14 @@
     height:  100vh;
     background-size: cover;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     .text-block{
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      margin: auto; /*上下左右中央に*/
-      height: 256px;
-      width: 104px;
       .fv-text{
         writing-mode: vertical-rl;
         color: $white;
+        font-size: $fontsize-xl;
         font-family: $fontfamily-mincho;
         line-height: 52px;
         @media screen and (max-width:$breakpoint-lg) {
@@ -30,11 +26,11 @@
       }
     }
     }
-  @media screen and (max-width:$breakpoint-lg) {
     .top-image{
-      height: 360px;
+      @media screen and (max-width:$breakpoint-lg) {
+        height: 360px;
+      }
     }
-  }
 }
 .message_wrapper{
   background-color: $black;
