@@ -1,0 +1,22 @@
+@use '../../variables' as *;
+
+.organisms-about{
+  .images{
+    width: 100%;
+    display: flex;
+    @media (max-width: $breakpoint-lg) {
+      display: block;
+    }
+    img{
+      width: 50%;
+      @media (max-width: $breakpoint-lg) {
+      }
+    }
+  }
+  .message_wrapper{
+    background-color: $white_smoke;
+    .main-caption{
+      font-family: $fontfamily-gothic;
+    }
+  }
+}
