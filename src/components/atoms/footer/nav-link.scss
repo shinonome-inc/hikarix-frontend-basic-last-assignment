@@ -1,0 +1,20 @@
+
+@use '../../reset' as *;
+@use '../../variables' as *;
+
+.footer-nav-link{
+  font-size: $fontsize-s;
+  font-family: $fontfamily-gothic;
+  display: inline-block;
+  list-style: none;
+  transition: 0.2s ease;
+  line-height: 20px;
+  cursor: pointer;
+  .footer-link{
+    text-decoration: none;
+    color: $black;
+    &:hover{
+      color: $orange_bistre;
+    }
+  }
+}
