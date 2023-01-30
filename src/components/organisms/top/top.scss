@@ -13,16 +13,10 @@
       height: 360px;
     }
   .text-block{
-    .fv-text{
+    .main-heading {
       writing-mode: vertical-rl;
       color: $white;
-      font-size: $fontsize-xl;
-      font-family: $fontfamily-mincho;
-      line-height: 52px;
-      @media screen and (max-width:$breakpoint-lg) {
-        font-size: $fontsize-l;
-        line-height: 29px;
-      }
+      text-align: start;
     }
   }
   }
