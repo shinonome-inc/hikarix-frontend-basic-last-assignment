@@ -1,32 +1,32 @@
 @use "../../variables" as *;
 
-.organisms-top{
-  .top-image{
+.organisms-top {
+  .top-image {
     background-image: url("../../../img/top-image.png");
-    height:  100vh;
+    height: 100vh;
     background-size: cover;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    @media screen and (max-width:$breakpoint-lg) {
+    @media screen and (max-width: $breakpoint-lg) {
       height: 360px;
     }
-  .text-block{
-    .main-heading {
-      writing-mode: vertical-rl;
-      color: $white;
-      text-align: start;
-      margin-bottom: 0;
+    .text-block {
+      .main-heading {
+        writing-mode: vertical-rl;
+        color: $white;
+        text-align: start;
+        margin-bottom: 0;
+      }
     }
   }
-  }
-  .message_wrapper{
+  .message_wrapper {
     background-color: $black;
-    h2{
+    h2 {
       color: $white;
     }
-    .main-caption{
+    .main-caption {
       color: $white;
     }
   }
