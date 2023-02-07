@@ -6,14 +6,14 @@
   .card {
     margin-bottom: 100px;
     width: calc(calc(100% - 96px) / 3);
-    @media (max-width: $breakpoint-lg) {
+    @media (max-width: $breakpoint-md) {
       width: 100%;
       margin: 0 auto;
       max-width: 540px;
       margin-bottom: 40px;
     }
   }
-  @media (max-width: $breakpoint-lg) {
+  @media (max-width: $breakpoint-md) {
     display: block;
   }
 }
