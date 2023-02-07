@@ -11,9 +11,27 @@
     line-height: 28px;
     font-weight: 400;
   }
+  .icons {
+    display: flex;
+    height: 14px;
+    width: 98px;
+    gap: 14px;
+    margin: 0 auto;
+    margin-top: 20px;
+    a {
+      list-style: none;
+      i {
+        transition: ease 0.2s;
+        color: $black;
+        &:hover {
+          color: $gray_nobel;
+        }
+      }
+    }
+  }
 }
 .footer-nav-list {
-  @media (max-width: $breakpoint-lg) {
+  @media (max-width: $breakpoint-md) {
     padding: 16px;
   }
   background-color: $white_smoke;
@@ -21,7 +39,7 @@
     padding: 16px 0;
     display: flex;
     justify-content: center;
-    @media (max-width: $breakpoint-lg) {
+    @media (max-width: $breakpoint-md) {
       display: block;
       padding: 0;
     }
@@ -39,7 +57,12 @@
         padding-right: 8px;
         margin-right: 8px;
         border-right: 1px solid $black;
-        @media (max-width: $breakpoint-lg) {
+        transition: ease 0.2s;
+        &:hover {
+          text-decoration: none;
+          color: $orange_bistre;
+        }
+        @media (max-width: $breakpoint-md) {
           display: block;
           border-right: 0;
           width: 50%;

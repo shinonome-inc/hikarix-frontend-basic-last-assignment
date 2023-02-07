@@ -4,7 +4,7 @@
 
 
 .footer-nav-list{
-  @media(max-width: $breakpoint-lg){
+  @media(max-width: $breakpoint-md){
     padding: 16px;
   }
   background-color: $white_smoke;
@@ -12,7 +12,7 @@
     padding: 16px 0;
     display: flex;
     justify-content: center;
-    @media(max-width: $breakpoint-lg){
+    @media(max-width: $breakpoint-md){
       display: block;
       padding: 0;
     }
@@ -30,7 +30,7 @@
         padding-right: 8px;
         margin-right: 8px;
         border-right: 1px solid $black;
-        @media(max-width: $breakpoint-lg){
+        @media(max-width: $breakpoint-md){
           display: block;
           border-right: 0;
           width: 50%;
