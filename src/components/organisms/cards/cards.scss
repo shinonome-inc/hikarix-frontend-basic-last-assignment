@@ -4,14 +4,22 @@
   display: flex;
   justify-content: space-around;
   .card{
-    width: calc(calc(100% - 96px) / 3);
     margin-bottom: 100px;
+    width: calc(calc(100% - 96px) / 3 );
     @media (max-width: $breakpoint-lg){
       width: 100%;
+      margin: 0 auto;
+      max-width: 540px;
       margin-bottom: 40px;
     }
   }
   @media (max-width: $breakpoint-lg){
     display: block;
   }
+}
+
+.container {
+  max-width: 100%;
+  padding-right: 0;
+  padding-left: 0;
 }
