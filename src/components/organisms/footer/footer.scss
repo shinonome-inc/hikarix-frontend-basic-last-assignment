@@ -1,45 +1,45 @@
-@use '../../reset' as *;
-@use '../../variables' as *;
+@use "../../reset" as *;
+@use "../../variables" as *;
 
-.contact-wrapper{
+.contact-wrapper {
   padding: 52px;
-  img{
+  img {
     margin-bottom: 20px;
   }
-  .info{
+  .info {
     font-size: $fontsize-s;
     line-height: 28px;
     font-weight: 400;
   }
 }
-.footer-nav-list{
-  @media(max-width: $breakpoint-lg){
+.footer-nav-list {
+  @media (max-width: $breakpoint-lg) {
     padding: 16px;
   }
   background-color: $white_smoke;
-  ul{
+  ul {
     padding: 16px 0;
     display: flex;
     justify-content: center;
-    @media(max-width: $breakpoint-lg){
+    @media (max-width: $breakpoint-lg) {
       display: block;
       padding: 0;
     }
-    .links{
-      &:last-of-type{
-        .footer-nav-link{
-          &:last-of-type{
+    .links {
+      &:last-of-type {
+        .footer-nav-link {
+          &:last-of-type {
             border-right: 0;
           }
         }
       }
-      .footer-nav-link{
+      .footer-nav-link {
         text-align: left;
         display: block;
         padding-right: 8px;
         margin-right: 8px;
         border-right: 1px solid $black;
-        @media(max-width: $breakpoint-lg){
+        @media (max-width: $breakpoint-lg) {
           display: block;
           border-right: 0;
           width: 50%;
@@ -49,10 +49,10 @@
     }
   }
 }
-.copyright-wrapper{
+.copyright-wrapper {
   padding: 16px 0;
   background-color: $black;
-  .copyright{
+  .copyright {
     font-size: 12px;
     line-height: 12px;
     font-family: $fontfamily-gothic;
