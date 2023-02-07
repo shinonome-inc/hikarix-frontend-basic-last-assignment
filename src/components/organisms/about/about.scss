@@ -1,32 +1,32 @@
-@use '../../variables' as *;
+@use "../../variables" as *;
 
-.organisms-about{
+.organisms-about {
   margin: 40px auto;
   width: 100%;
   @media (max-width: $breakpoint-lg) {
     width: 70%;
     margin: 40px auto;
   }
-  .images{
+  .images {
     width: 100%;
     display: flex;
     @media (max-width: $breakpoint-lg) {
       display: block;
     }
-    img{
+    img {
       width: 50%;
       @media (max-width: $breakpoint-lg) {
       }
     }
   }
-  .message_wrapper{
+  .message_wrapper {
     background-color: $white_smoke;
-    .main-caption{
+    .main-caption {
       font-family: $fontfamily-gothic;
     }
   }
 }
-.container{
+.container {
   margin-right: 0;
   margin-left: 0;
   padding: 0;
