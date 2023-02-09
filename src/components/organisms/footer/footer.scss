@@ -3,6 +3,9 @@
 
 .contact-wrapper {
   padding: 52px;
+  @media (max-width: $breakpoint-md) {
+    padding: 5px;
+  }
   img {
     margin-bottom: 20px;
   }
@@ -10,6 +13,7 @@
     font-size: $fontsize-s;
     line-height: 28px;
     font-weight: 400;
+    font-family: $fontfamily-gothic;
   }
   .icons {
     display: flex;
@@ -61,6 +65,9 @@
         &:hover {
           text-decoration: none;
           color: $orange_bistre;
+        }
+        .footer-link {
+          font-family: $fontfamily-gothic;
         }
         @media (max-width: $breakpoint-md) {
           display: block;
