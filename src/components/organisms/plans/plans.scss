@@ -15,7 +15,6 @@
   .plans-wrapper {
     display: flex;
     justify-content: space-between;
-    gap: 30px;
     margin: 0 24px;
     @media (max-width: $breakpoint-md) {
       display: block;
@@ -23,7 +22,7 @@
   }
   .plan {
     margin-bottom: 62px;
-    width: calc(calc(100% - 108px) / 3);
+    width: calc(calc(100% - 60px) / 3);
     @media (max-width: $breakpoint-md) {
       width: 100%;
       margin-bottom: 24px;
