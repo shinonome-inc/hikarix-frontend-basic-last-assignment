@@ -31,6 +31,7 @@
     font-size: $fontsize-l;
     line-height: 29px;
     color: $orange_bistre;
+    font-family: $fontfamily-gothic;
   }
   .triangle{
     z-index: 1;
@@ -51,6 +52,7 @@
       font-size: $fontsize-s;
       line-height: 33px;
       color: $black;
+      font-family: $fontfamily-gothic;
     }
     .center{
       text-align: center;
