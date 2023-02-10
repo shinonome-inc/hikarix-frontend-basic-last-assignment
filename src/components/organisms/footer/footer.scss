@@ -22,6 +22,9 @@
     gap: 14px;
     margin: 0 auto;
     margin-top: 20px;
+    @media (max-width: $breakpoint-md) {
+      margin-bottom: 35px;
+    }
     a {
       list-style: none;
       i {
