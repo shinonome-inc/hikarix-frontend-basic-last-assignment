@@ -29,6 +29,7 @@
   line-height: 36px;
   color: $black;
   margin-bottom: 0;
+  font-family: $fontfamily-gothic;
   @media screen and (max-width:$breakpoint-lg) {
     line-height: 28px;
   }
