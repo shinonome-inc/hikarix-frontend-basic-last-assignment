@@ -1,29 +1,19 @@
 @use "../../variables" as *;
 
-.organisms-about {
-  margin: 40px auto;
+.images {
   width: 100%;
+  display: flex;
   @media (max-width: $breakpoint-lg) {
-    width: 70%;
-    margin: 40px auto;
+    display: block;
   }
-  .images {
-    width: 100%;
-    display: flex;
-    @media (max-width: $breakpoint-lg) {
-      display: block;
-    }
-    img {
-      width: 50%;
-      @media (max-width: $breakpoint-lg) {
-      }
-    }
+  img {
+    width: 50%;
   }
-  .message_wrapper {
-    background-color: $white_smoke;
-    .main-caption {
-      font-family: $fontfamily-gothic;
-    }
+}
+.message_wrapper {
+  background-color: $white_smoke;
+  .main-caption {
+    font-family: $fontfamily-gothic;
   }
 }
 .container {
