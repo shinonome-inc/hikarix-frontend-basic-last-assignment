@@ -11,6 +11,7 @@
     align-items: center;
     @media screen and (max-width: $breakpoint-lg) {
       height: 360px;
+      background-position: center bottom;
     }
     .text-block {
       .main-heading {
