@@ -1,25 +1,31 @@
 @use "../../variables" as *;
 
 .organisms-cards {
-  display: flex;
-  justify-content: space-around;
-  .card {
-    margin-bottom: 100px;
-    width: calc(calc(100% - 96px) / 3);
+  .container {
+    max-width: 100%;
+    padding-right: 0;
+    padding-left: 0;
     @media (max-width: $breakpoint-md) {
-      width: 100%;
-      margin: 0 auto;
+      margin-right: auto;
+      margin-left: auto;
       max-width: 540px;
-      margin-bottom: 40px;
     }
   }
-  @media (max-width: $breakpoint-md) {
-    display: block;
+  .cards{
+    display: flex;
+    justify-content: space-around;
+    .card {
+      margin-bottom: 100px;
+      width: calc(calc(100% - 96px) / 3);
+      @media (max-width: $breakpoint-md) {
+        width: 100%;
+        margin: 0 auto;
+        max-width: 540px;
+        margin-bottom: 40px;
+      }
+    }
+    @media (max-width: $breakpoint-md) {
+      display: block;
+    }
   }
-}
-
-.container {
-  max-width: 100%;
-  padding-right: 0;
-  padding-left: 0;
 }
