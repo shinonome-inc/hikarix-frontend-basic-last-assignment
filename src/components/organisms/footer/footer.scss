@@ -38,10 +38,12 @@
     }
   }
   .footer-nav-list {
+    border-top: 1px solid $gray_nobel;
+    background-color: $white_smoke;
+
     @media (max-width: $breakpoint-md) {
       padding: 16px;
     }
-    background-color: $white_smoke;
     ul {
       padding: 16px 0;
       display: flex;
