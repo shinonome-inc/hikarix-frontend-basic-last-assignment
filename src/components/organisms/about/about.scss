@@ -1,23 +1,36 @@
 @use "../../variables" as *;
-
-.images {
-  width: 100%;
-  display: flex;
-  @media (max-width: $breakpoint-lg) {
-    display: block;
+.about{
+  margin-top: 100px;
+  margin-bottom: 100px;
+  @media (max-width: $breakpoint-xl) {
+    margin-top: 40px;
+    margin-bottom: 40px;
   }
-  img {
-    width: 50%;
+  .container {
+    margin-right: 0;
+    margin-left: 0;
+    padding: 0;
+    @media (max-width: $breakpoint-xl) {
+      margin-right: auto;
+      margin-left: auto;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
   }
-}
-.message_wrapper {
-  background-color: $white_smoke;
-  .main-caption {
-    font-family: $fontfamily-gothic;
+  .images {
+    width: 100%;
+    display: flex;
+    @media (max-width: $breakpoint-lg) {
+      display: block;
+    }
+    img {
+      width: 50%;
+    }
   }
-}
-.container {
-  margin-right: 0;
-  margin-left: 0;
-  padding: 0;
+  .message_wrapper {
+    background-color: $white_smoke;
+    .main-caption {
+      font-family: $fontfamily-gothic;
+    }
+  }
 }
