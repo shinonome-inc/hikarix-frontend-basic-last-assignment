@@ -6,6 +6,7 @@
     align-items: center;
     font-size: $fontsize-l;
     font-family: $fontfamily-mincho;
+    font-weight: 400;
     margin-bottom: 32px;
 
     @media (min-width: $breakpoint-md) {
@@ -17,6 +18,9 @@
       font-family: $fontfamily-gothic;
       font-weight: 400;
       margin-left: 16px;
+    }
+    @media (max-width: $breakpoint-lg) {
+      font-size: $fontsize-l;
     }
   }
 }

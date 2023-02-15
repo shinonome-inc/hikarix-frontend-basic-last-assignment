@@ -1,0 +1,42 @@
+@use "../../molecules/news-and-events-more/news-and-events-more" as *;
+@use "../../molecules/news-and-events-title/news-and-events-title.scss" as *;
+@use "../../variables" as *;
+@use "../../reset" as *;
+
+.news-list {
+  border: 1px solid $gray_gainsboro;
+  a {
+    &:last-of-type {
+      .news-card {
+        border-bottom: 0;
+      }
+    }
+    .news-card {
+      background-color: $white;
+      padding: 20px;
+      outline-offset: -1px;
+      border-bottom: 1px solid $gray_gainsboro;
+      height: 85px;
+      .date {
+        font-size: 12px;
+        color: $gray_nobel;
+        margin-bottom: 10px;
+      }
+      .news-caption {
+        font-family: $fontfamily-gothic;
+        font-size: 16px;
+        line-height: 23px;
+        color: $black;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        transition: 0.2s ease;
+        text-decoration: none;
+        font-weight: 400;
+        &:hover {
+          color: $orange_bistre;
+        }
+      }
+    }
+  }
+}
