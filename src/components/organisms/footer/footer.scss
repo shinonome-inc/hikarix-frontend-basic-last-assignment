@@ -1,0 +1,97 @@
+@use "../../reset" as *;
+@use "../../variables" as *;
+.footer {
+  .contact-wrapper {
+    padding: 52px;
+    @media (max-width: $breakpoint-md) {
+      padding: 5px;
+    }
+    img {
+      margin-bottom: 20px;
+    }
+    .info {
+      font-size: $fontsize-s;
+      line-height: 28px;
+      font-weight: 400;
+      font-family: $fontfamily-gothic;
+    }
+    .icons {
+      display: flex;
+      height: 14px;
+      width: 98px;
+      gap: 14px;
+      margin: 0 auto;
+      margin-top: 20px;
+      @media (max-width: $breakpoint-md) {
+        margin-bottom: 35px;
+      }
+      a {
+        list-style: none;
+        i {
+          transition: ease 0.2s;
+          color: $black;
+          &:hover {
+            color: $gray_nobel;
+          }
+        }
+      }
+    }
+  }
+  .footer-nav-list {
+    border-top: 1px solid $gray_nobel;
+    background-color: $white_smoke;
+
+    @media (max-width: $breakpoint-md) {
+      padding: 16px;
+    }
+    ul {
+      padding: 16px 0;
+      display: flex;
+      justify-content: center;
+      @media (max-width: $breakpoint-md) {
+        display: block;
+        padding: 0;
+      }
+      .links {
+        &:last-of-type {
+          .footer-nav-link {
+            &:last-of-type {
+              border-right: 0;
+            }
+          }
+        }
+        .footer-nav-link {
+          text-align: left;
+          display: block;
+          padding-right: 8px;
+          margin-right: 8px;
+          border-right: 1px solid $black;
+          transition: ease 0.2s;
+          &:hover {
+            text-decoration: none;
+            color: $orange_bistre;
+          }
+          .footer-link {
+            font-family: $fontfamily-gothic;
+          }
+          @media (max-width: $breakpoint-md) {
+            display: block;
+            border-right: 0;
+            width: 50%;
+            margin-bottom: 8px;
+          }
+        }
+      }
+    }
+  }
+  .copyright-wrapper {
+    padding: 16px 0;
+    background-color: $black;
+    .copyright {
+      font-size: 12px;
+      line-height: 12px;
+      font-family: $fontfamily-gothic;
+      color: $white;
+    }
+  }
+}

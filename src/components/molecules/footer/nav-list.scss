@@ -1,0 +1,52 @@
+@use '../../reset' as *;
+@use '../../variables' as *;
+
+
+
+.footer-nav-list{
+  @media(max-width: $breakpoint-md){
+    padding: 16px;
+  }
+  background-color: $white_smoke;
+  ul{
+    padding: 16px 0;
+    display: flex;
+    justify-content: center;
+    @media(max-width: $breakpoint-md){
+      display: block;
+      padding: 0;
+    }
+    .links{
+      &:last-of-type{
+        .footer-nav-link{
+          &:last-of-type{
+            border-right: 0;
+          }
+        }
+      }
+      .footer-nav-link{
+        text-align: left;
+        display: block;
+        padding-right: 8px;
+        margin-right: 8px;
+        border-right: 1px solid $black;
+        @media(max-width: $breakpoint-md){
+          display: block;
+          border-right: 0;
+          width: 50%;
+          margin-bottom: 8px;
+        }
+      }
+    }
+  }
+}
+.copyright-wrapper{
+  padding: 16px 0;
+  background-color: $black;
+  .copyright{
+    font-size: 12px;
+    line-height: 12px;
+    font-family: $fontfamily-gothic;
+    color: $white;
+  }
+}
