@@ -1,0 +1,34 @@
+@use "../../variables" as *;
+
+.organisms-top {
+  .top-image {
+    background-image: url("../../../img/top-image.png");
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media screen and (max-width: $breakpoint-lg) {
+      height: 360px;
+      background-position: center;
+    }
+    .text-block {
+      .main-heading {
+        writing-mode: vertical-rl;
+        color: $white;
+        text-align: start;
+        margin-bottom: 0;
+      }
+    }
+  }
+  .message_wrapper {
+    background-color: $black;
+    h2 {
+      color: $white;
+    }
+    .main-caption {
+      color: $white;
+    }
+  }
+}
