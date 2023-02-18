@@ -2,33 +2,28 @@
 @use "../../variables" as *;
 
 .organisms-plans {
-  margin: 0 auto 100px;
-  padding-left: 0;
-  padding-right: 0;
+  .message_wrapper {
+    padding-bottom: 32px;
+  }
   margin-bottom: 100px;
-  display: grid;
-  gap: 15px;
   @media (max-width: $breakpoint-md) {
     margin-bottom: 35px;
   }
   .plans-wrapper {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 15px;
     margin: 0 24px;
     @media (max-width: $breakpoint-md) {
       display: block;
     }
   }
   .plan {
-    margin-bottom: 62px;
+    margin-bottom: 40px;
     @media (max-width: $breakpoint-md) {
       width: 100%;
       margin-bottom: 24px;
     }
   }
 }
-.container .container.organisms-plans {
-  margin-right: 0px;
-  margin-left: 0px;
-  max-width: 100%;
-}
+
