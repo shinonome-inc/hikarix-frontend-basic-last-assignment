@@ -1,0 +1,21 @@
+@use "../../variables" as *;
+
+.organisms-cards {
+  .cards{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 24px;
+    .card {
+      margin-bottom: 100px;
+      @media (max-width: $breakpoint-md) {
+        width: 100%;
+        margin: 0 auto;
+        max-width: 540px;
+        margin-bottom: 40px;
+      }
+    }
+    @media (max-width: $breakpoint-md) {
+      display: block;
+    }
+  }
+}
