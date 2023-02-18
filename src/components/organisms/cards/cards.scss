@@ -1,22 +1,12 @@
 @use "../../variables" as *;
 
 .organisms-cards {
-  .container {
-    max-width: 100%;
-    padding-right: 0;
-    padding-left: 0;
-    @media (max-width: $breakpoint-md) {
-      margin-right: auto;
-      margin-left: auto;
-      max-width: 540px;
-    }
-  }
   .cards{
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 24px;
     .card {
       margin-bottom: 100px;
-      width: calc(calc(100% - 96px) / 3);
       @media (max-width: $breakpoint-md) {
         width: 100%;
         margin: 0 auto;
