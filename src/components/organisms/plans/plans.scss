@@ -1,0 +1,29 @@
+@use "../../reset" as *;
+@use "../../variables" as *;
+
+.organisms-plans {
+  .message_wrapper {
+    padding-bottom: 32px;
+  }
+  margin-bottom: 100px;
+  @media (max-width: $breakpoint-md) {
+    margin-bottom: 35px;
+  }
+  .plans-wrapper {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 15px;
+    margin: 0 24px;
+    @media (max-width: $breakpoint-md) {
+      display: block;
+    }
+  }
+  .plan {
+    margin-bottom: 40px;
+    @media (max-width: $breakpoint-md) {
+      width: 100%;
+      margin-bottom: 24px;
+    }
+  }
+}
+

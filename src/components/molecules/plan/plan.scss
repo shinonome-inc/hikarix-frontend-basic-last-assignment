@@ -2,8 +2,8 @@
 
 .plan{
   &:nth-of-type(2n){
-    outline: 8px solid $orange_bistre;
-    outline-offset: -8px;
+    outline: 4px solid $orange_bistre;
+    outline-offset: -4px;
     .plan-text-wrapper{
       background-color: $orange_bistre;
     }
@@ -60,6 +60,7 @@
         margin-bottom: 0;
         padding: 20px;
         line-height: 20px;
+        font-family: $fontfamily-gothic;
       }
     }
   }
