@@ -1,21 +1,10 @@
 @use "../../variables" as *;
-.about{
+.about {
   margin-top: 100px;
   margin-bottom: 100px;
-  @media (max-width: $breakpoint-xl) {
+  @media (max-width: $breakpoint-lg) {
     margin-top: 40px;
     margin-bottom: 40px;
-  }
-  .container {
-    margin-right: 0;
-    margin-left: 0;
-    padding: 0;
-    @media (max-width: $breakpoint-xl) {
-      margin-right: auto;
-      margin-left: auto;
-      padding-left: 15px;
-      padding-right: 15px;
-    }
   }
   .images {
     width: 100%;
@@ -31,6 +20,7 @@
     background-color: $white_smoke;
     .main-caption {
       font-family: $fontfamily-gothic;
+      color: $orange_bistre;
     }
   }
 }
