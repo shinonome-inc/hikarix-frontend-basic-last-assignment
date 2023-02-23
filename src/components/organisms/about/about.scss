@@ -18,9 +18,11 @@
   }
   .message_wrapper {
     background-color: $white_smoke;
+    .main-heading {
+      color: $orange_bistre;
+    }
     .main-caption {
       font-family: $fontfamily-gothic;
-      color: $orange_bistre;
     }
   }
 }
