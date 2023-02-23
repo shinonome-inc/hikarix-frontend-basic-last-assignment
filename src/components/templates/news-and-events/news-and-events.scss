@@ -1,0 +1,31 @@
+@use "../../variables" as *;
+
+.templates-news-and-events {
+  background-color: $white_smoke;
+  padding: 56px 0;
+  .organisms-news {
+    padding-left: 0;
+    padding-right: 20px;
+    @media (max-width: $breakpoint-lg) {
+      padding: 0;
+      padding-bottom: 38px;
+    }
+  }
+  .events {
+    padding-right: 0;
+    padding-left: 20px;
+    @media (max-width: $breakpoint-lg) {
+      padding: 0;
+    }
+    .event-list {
+      display: flex;
+      gap: 0;
+      margin-bottom: 0;
+      .event-card {
+        a {
+          height: 142px;
+        }
+      }
+    }
+  }
+}

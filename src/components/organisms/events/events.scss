@@ -45,6 +45,7 @@
           width: 100%;
           background-color: $white;
           border: 1px solid $gray_gainsboro;
+          font-family: $fontfamily-gothic;
           display: flex;
           flex-direction: column;
           align-items: flex-start;
@@ -85,5 +86,8 @@
         border-top: none;
       }
     }
+  }
+  .news-and-events-more {
+    font-family: $fontfamily-gothic;
   }
 }
